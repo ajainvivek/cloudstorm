@@ -8,6 +8,8 @@
 
 <h4 align="center">Weather widget using openweather API</h4>
 
+#### [Visit demo](http://ajainvivek.github.io/cloudstorm/)
+
 ### Setup & Installation Steps
 * Once the repository is cloned do npm install & bower install.
 

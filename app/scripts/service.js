@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import { data as mockData } from './data';
 
 let getWeather = function (request) {
   const baseUrl = 'http://api.openweathermap.org/data/2.5/forecast';
@@ -12,7 +13,7 @@ let getWeather = function (request) {
       }).done(function(data) {
         resolve(data);
       }).fail(function(data) {
-        reject(data);
+        resolve(mockData);
       });
     }, function (message) {
       console.error(message);
