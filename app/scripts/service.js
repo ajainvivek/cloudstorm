@@ -31,10 +31,9 @@ let getCurrentLatLong = function () {
         $.getJSON(locationUrl, function(data) {
             resolve({
               latitude : data.lat,
-              longitude : data.long
+              longitude : data.lon
             });
         });
-        reject('Permission denied!!');
       });
     } else {
       reject('No browser support!!');
