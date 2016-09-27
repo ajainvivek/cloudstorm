@@ -13,7 +13,6 @@
 ### Setup & Installation Steps
 * Once the repository is cloned do npm install & bower install.
 
-```
 * Run the application on browsers
 ```js
 gulp serve
