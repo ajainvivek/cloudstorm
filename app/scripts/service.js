@@ -23,7 +23,7 @@ let getWeather = function (request) {
       }).done(function(data) {
         resolve(data);
       }).fail(function(data) {
-        resolve(mockData);
+        resolve(mockData());
       });
     }, function (message) {
       console.error(message);
