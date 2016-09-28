@@ -1,3 +1,10 @@
+/***
+* Dummy mock data
+*
+* @method data
+* @return {Object} - Weather data
+***/
+
 export function data() {
   return {
     "city": {

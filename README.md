@@ -22,6 +22,9 @@ gulp serve
 gulp build
 ```
 
+### TODO
+* Setup unit test Karma/Jasmine
+
 ## License
 
 #### The MIT License (MIT)

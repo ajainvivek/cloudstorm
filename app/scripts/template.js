@@ -2,9 +2,13 @@ import $ from 'jquery';
 import { getRoundedNumber, getDateTime } from './helper';
 import { getIcon } from './icon';
 
-/**
-* Displays the weather details
-**/
+/***
+* Get the weather detail display view
+*
+* @method getDisplayView
+* @param {Object} - data - weather data
+* @return {String} - displayview - the filled displayview
+***/
 export function getDisplayView(data) {
   let temp = getRoundedNumber(data.list[0].main.temp, 1);
   let getToday = getDateTime(data.list[0].dt_txt);
@@ -51,9 +55,12 @@ export function getDisplayView(data) {
   `;
 }
 
-/**
-* Displays the weather form to submit
-**/
+/***
+* Get the form view
+*
+* @method getFormView
+* @return {String} - formview - the dom for formview
+***/
 export function getFormView() {
   return `
     <div class='cloudstorm-form'>
@@ -91,9 +98,11 @@ export function getFormView() {
 
 
 /***
-* Loading
+* Get the intermediate progress state
+*
+* @method getLoadingView
+* @return {String} - getLoadingView - progress indicator view
 ***/
-
 export function getLoadingView() {
   return `
   <div class="cloudstorm-loading">
